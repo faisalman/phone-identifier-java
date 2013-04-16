@@ -7,7 +7,7 @@ package com.faisalman.phoneidentifier;
  *
  * @author Faisal Salman
  */
-public class PhoneNumber {
+public class Phone {
     public String number;
     public Provider provider;
     public String areaCode;

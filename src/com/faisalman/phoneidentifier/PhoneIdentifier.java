@@ -8,8 +8,8 @@ package com.faisalman.phoneidentifier;
  * @author Faisal Salman
  */
 public abstract class PhoneIdentifier {
-    public static PhoneNumber identify (String num) {
-        PhoneNumber phone = new PhoneNumber();        
+    public static Phone identify (String num) {
+        Phone phone = new Phone();        
         // set default values
         phone.areaCode = "";
         phone.country = Country.Indonesia;
