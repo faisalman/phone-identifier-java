@@ -43,10 +43,10 @@ public abstract class PhoneIdentifier {
         } else {
             // sanitize area code
             if(num.matches("^0(61|21|22|24|31)\\d+")) {
-                phone.areaCode = num.substring(0, 3);
+                phone.areaCode = num.substring(1, 3);
                 num = num.substring(3);
             } else {
-                phone.areaCode = num.substring(0, 4);
+                phone.areaCode = num.substring(1, 4);
                 num = num.substring(4);
             }
             // set region
