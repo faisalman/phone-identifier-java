@@ -13,7 +13,7 @@ public abstract class Operatorify {
         // set default values
         phone.areaCode = "";
         phone.country = Country.Indonesia;
-        phone.operator = Operator.Unknown;
+        phone.provider = Provider.Unknown;
         phone.region = Region.Unknown;        
         // check country code
         if (!num.startsWith("0")) {
@@ -23,22 +23,22 @@ public abstract class Operatorify {
                 num = num.replaceFirst("\\+?\\d\\d", "0");
             }
         }
-        // set operator
+        // set provider
         if (num.startsWith("08")) {
             if (num.matches("^08(11|12|13|21|22|52|53|23)\\d+")) {
-                phone.operator = Operator.Telkomsel;
+                phone.provider = Provider.Telkomsel;
             } else if (num.matches("^08(14|15|16|55|58|56|57)\\d+")) {
-                phone.operator = Operator.Indosat;
+                phone.provider = Provider.Indosat;
             } else if (num.matches("^08(17|18|19|59|74|76|77|78|79)\\d+")) {
-                phone.operator = Operator.XL;
+                phone.provider = Provider.XL;
             } else if (num.matches("^08(99|98|97|96)\\d+")) {
-                phone.operator = Operator.Three;
+                phone.provider = Provider.Three;
             } else if (num.matches("^08(38|32|31)\\d+")) {
-                phone.operator = Operator.Axis;
+                phone.provider = Provider.Axis;
             } else if (num.matches("^08(81|82|88)\\d+")) {
-                phone.operator = Operator.Smartfren;
+                phone.provider = Provider.Smartfren;
             } else if (num.matches("^08(27|28)\\d+")) {
-                phone.operator = Operator.Ceria;
+                phone.provider = Provider.Ceria;
             }
         } else {
             // sanitize area code
@@ -51,15 +51,15 @@ public abstract class Operatorify {
             }
             // set region
             phone.region = Region.getRegion(phone.areaCode);
-            // set operator
+            // set provider
             if (num.matches("^(30|60|61|62|63|90)\\d+")) {
-                phone.operator = Operator.StarOne;
+                phone.provider = Provider.StarOne;
             } else if (num.matches("^(9|80|83)\\d+")) {
-                phone.operator = Operator.Esia;
+                phone.provider = Provider.Esia;
             } else if (num.matches("^(70|68|54|80|81|3)\\d+")) {
-                phone.operator = Operator.Flexi;
+                phone.provider = Provider.Flexi;
             } else if (num.matches("^(50|21|31)\\d+")) {
-                phone.operator = Operator.Hepi;
+                phone.provider = Provider.Hepi;
             }
         }
         return phone;

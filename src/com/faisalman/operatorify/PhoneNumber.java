@@ -9,7 +9,7 @@ package com.faisalman.operatorify;
  */
 public class PhoneNumber {
     public String number;
-    public Operator operator;
+    public Provider provider;
     public String areaCode;
     public Country country;
     public Region region;

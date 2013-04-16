@@ -7,7 +7,7 @@ package com.faisalman.operatorify;
  *
  * @author Faisal Salman
  */
-public enum Operator {
+public enum Provider {
     Unknown,
     Telkom,
     Telkomsel,
