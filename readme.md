@@ -1,6 +1,6 @@
 # PhoneIdentifier.java
 
-Phone number identifier (only support Indonesian number format)
+Phone number identifier (currently only support Indonesian number format)
 
 ## Example
 

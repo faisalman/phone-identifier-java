@@ -19,7 +19,6 @@ public enum Provider {
     Flexi,
     Smartfren,
     StarOne,
-    Hepi,
     Ceria,
     Byru
 }

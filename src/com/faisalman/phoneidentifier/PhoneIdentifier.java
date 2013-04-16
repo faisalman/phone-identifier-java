@@ -61,7 +61,7 @@ public abstract class PhoneIdentifier {
             } else if (num.matches("^(70|68|54|80|81|3)\\d+")) {
                 phone.provider = Provider.Flexi;
             } else if (num.matches("^(50|21|31)\\d+")) {
-                phone.provider = Provider.Hepi;
+                phone.provider = Provider.Smartfren;
             }
         }
         return phone;
