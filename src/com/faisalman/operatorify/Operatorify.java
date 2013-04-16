@@ -8,7 +8,7 @@ package com.faisalman.operatorify;
  * @author Faisal Salman
  */
 public abstract class Operatorify {
-    public static PhoneNumber inspect (String num) {
+    public static PhoneNumber identify (String num) {
         PhoneNumber phone = new PhoneNumber();        
         // set default values
         phone.areaCode = "";
