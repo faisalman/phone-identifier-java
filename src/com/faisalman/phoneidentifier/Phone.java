@@ -1,5 +1,5 @@
 /*
- * Phone number struct
+ * Phone struct
  */
 package com.faisalman.phoneidentifier;
 

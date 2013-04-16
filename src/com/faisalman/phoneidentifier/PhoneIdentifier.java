@@ -14,7 +14,7 @@ public abstract class PhoneIdentifier {
         phone.areaCode = "";
         phone.country = Country.Indonesia;
         phone.provider = Provider.Unknown;
-        phone.region = Region.Unknown;        
+        phone.region = new Region("");
         // check country code
         if (!num.startsWith("0")) {
             if (!num.matches("^\\+?62\\d+")) {
@@ -52,7 +52,7 @@ public abstract class PhoneIdentifier {
                 num = num.substring(4);
             }
             // set region
-            phone.region = Region.getRegion(phone.areaCode);
+            phone.region = new Region(phone.areaCode);
             // set provider
             if (num.matches("^(30|60|61|62|63|90)\\d+")) {
                 phone.provider = Provider.StarOne;
