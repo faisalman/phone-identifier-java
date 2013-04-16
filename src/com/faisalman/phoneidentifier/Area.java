@@ -1,5 +1,5 @@
 /*
- * Region list
+ * Area list
  */
 package com.faisalman.phoneidentifier;
 
@@ -10,10 +10,10 @@ import java.util.Map;
  *
  * @author Faisal Salman
  */
-public class Region {
+public class Area {
     public String code;
     public String name;
-    public Region(String code) {
+    public Area(String code) {
         this.code = code;
         this.name = this.map.containsKey(code) ? this.map.get(code) : "";
     }

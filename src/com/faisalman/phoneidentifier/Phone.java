@@ -10,7 +10,6 @@ package com.faisalman.phoneidentifier;
 public class Phone {
     public String number;
     public Provider provider;
-    public String areaCode;
     public Country country;
-    public Region region;
+    public Area area;
 }
