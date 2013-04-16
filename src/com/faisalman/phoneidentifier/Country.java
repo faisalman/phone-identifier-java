@@ -1,7 +1,7 @@
 /*
  * Country code definitions
  */
-package com.faisalman.operatorify;
+package com.faisalman.phoneidentifier;
 
 /**
  *

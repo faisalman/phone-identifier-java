@@ -1,7 +1,7 @@
 /*
  * Phone number struct
  */
-package com.faisalman.operatorify;
+package com.faisalman.phoneidentifier;
 
 /**
  *

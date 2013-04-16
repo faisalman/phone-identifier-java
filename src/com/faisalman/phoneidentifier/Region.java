@@ -1,7 +1,7 @@
 /*
  * Region definitions
  */
-package com.faisalman.operatorify;
+package com.faisalman.phoneidentifier;
 
 import java.util.HashMap;
 import java.util.Map;

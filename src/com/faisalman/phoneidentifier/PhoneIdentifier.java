@@ -1,13 +1,13 @@
 /*
  * Main class
  */
-package com.faisalman.operatorify;
+package com.faisalman.phoneidentifier;
 
 /**
  *
  * @author Faisal Salman
  */
-public abstract class Operatorify {
+public abstract class PhoneIdentifier {
     public static PhoneNumber identify (String num) {
         PhoneNumber phone = new PhoneNumber();        
         // set default values

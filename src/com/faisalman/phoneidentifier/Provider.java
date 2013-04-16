@@ -1,7 +1,7 @@
 /**
- * Operator definitions
+ * Provider list
  */
-package com.faisalman.operatorify;
+package com.faisalman.phoneidentifier;
 
 /**
  *
