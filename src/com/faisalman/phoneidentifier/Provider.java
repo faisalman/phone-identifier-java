@@ -20,5 +20,6 @@ public enum Provider {
     Smartfren,
     StarOne,
     Hepi,
-    Ceria
+    Ceria,
+    Byru
 }

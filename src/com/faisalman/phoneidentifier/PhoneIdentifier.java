@@ -39,6 +39,8 @@ public abstract class PhoneIdentifier {
                 phone.provider = Provider.Smartfren;
             } else if (num.matches("^08(27|28)\\d+")) {
                 phone.provider = Provider.Ceria;
+            } else if (num.matches("^08681\\d+")) {
+                phone.provider = Provider.Byru;
             }
         } else {
             // sanitize area code
