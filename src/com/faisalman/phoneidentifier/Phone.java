@@ -15,12 +15,12 @@ public class Phone {
     public static Phone identify (String num) {
         Phone phone = new Phone();
         // set default values
-        phone.areaCode = "";
         phone.country = Country.Indonesia;
         phone.provider = Provider.Unknown;
         phone.area = new Area("");
         // sanitize non-digit character from phone number
         num = num.replaceAll("\\D", "");
+        phone.number = num;
         // check country code
         if (!num.startsWith("0")) {
             if (!num.matches("^62\\d+")) {
