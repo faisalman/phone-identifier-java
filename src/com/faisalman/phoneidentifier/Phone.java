@@ -13,18 +13,21 @@ public class Phone {
     public Country country;
     public Area area;
     public static Phone identify (String num) {
-        Phone phone = new Phone();        
+        Phone phone = new Phone();
         // set default values
         phone.areaCode = "";
         phone.country = Country.Indonesia;
         phone.provider = Provider.Unknown;
         phone.area = new Area("");
+        // sanitize non-digit character from phone number
+        num = num.replaceAll("\\D", "");
         // check country code
         if (!num.startsWith("0")) {
-            if (!num.matches("^\\+?62\\d+")) {
+            if (!num.matches("^62\\d+")) {
+                // TODO: throw exception
                 return phone; // unsupported phone number outside Indonesia
             } else {
-                num = num.replaceFirst("\\+?\\d\\d", "0");
+                num = num.replaceFirst("\\d{2}", "0");
             }
         }
         // set provider
